@@ -1,4 +1,14 @@
 #!/usr/bin/python3
+"""
+Prime Game Module
+
+This module implements a prime number game where two players (Maria and Ben)
+take turns choosing prime numbers from a set of consecutive integers and
+removing those primes along with all their multiples. The player who cannot
+make a move loses the game.
+
+The game uses optimal strategy based on Nim game theory to determine the winner.
+"""
 
 def isWinner(x, nums):
     """
