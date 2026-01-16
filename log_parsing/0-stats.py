@@ -74,6 +74,10 @@ def main():
         print_stats(total_size, status_counts)
         raise
 
+    # Print statistics at the end if there are remaining lines (not a multiple of 10)
+    if line_count > 0 and line_count % 10 != 0:
+        print_stats(total_size, status_counts)
+
 
 if __name__ == "__main__":
     main()
